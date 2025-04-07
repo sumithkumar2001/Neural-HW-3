@@ -1,0 +1,32 @@
+Q2 : Explain one real-world scenario where denoising autoencoders can be useful (e.g., medical imaging, security).
+ANS : Real-World Application: Medical Imaging
+      Denoising autoencoders are extremely valuable in medical imaging where scans like MRIs or CTs may contain noise due to motion, low contrast, or environmental conditions.
+      A trained denoising model can enhance image clarity, helping doctors detect anomalies more accurately, even with imperfect data.
+
+Q3 : Explain the role of temperature scaling in text generation and its effect on randomness.
+ANS : Explanation: What is Temperature in Text Generation?
+      Temperature controls the randomness of predictions during text generation:
+
+      Low temperature (e.g., 0.2) → more conservative, predictable text (common characters only).
+
+      Medium temperature (e.g., 1.0) → balanced randomness, creative yet coherent.
+
+      High temperature (e.g., 1.5) → highly diverse, riskier choices, more surprising but also more likely to be nonsensical.
+
+      It affects how likely we are to pick characters with lower probabilities, by scaling the logits before applying softmax.
+
+Q4 : Interpret why precision-recall tradeoff is important in sentiment classification.
+ANS : Precision-Recall Tradeoff in Sentiment Analysis
+      Precision: How many predicted positive reviews were actually positive?
+
+      Recall: How many of the actual positive reviews did we correctly identify?
+
+      Why the tradeoff matters:
+      If you increase recall, you might catch more true positives, but at the cost of predicting more false positives (lower precision).
+
+      If you increase precision, you're more confident when calling something "positive", but may miss actual positives (lower recall).
+
+      In sentiment analysis:
+      If you're flagging negative reviews for customer service, high recall ensures no unhappy customer is missed.
+
+      If you're filtering out spammy positive reviews, high precision avoids false flags.
